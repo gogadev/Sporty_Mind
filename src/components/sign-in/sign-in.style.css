@@ -1,0 +1,35 @@
+.sign-in-up {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form {
+  display: grid;
+  gap: 1rem;
+  outline-width: 0;
+  width: 80%;
+}
+
+.form-title {
+  margin: 1rem auto;
+  display: flex;
+  text-align: center;
+}
+
+.input {
+  padding: 10px 10px;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  outline: none;
+  margin: 0.5rem auto;
+  width: 70%;
+}
+
+.span-title {
+  opacity: 0.8;
+  text-transform: capitalize;
+}

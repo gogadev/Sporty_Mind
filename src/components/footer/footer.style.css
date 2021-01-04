@@ -1,0 +1,44 @@
+.footer {
+  width: 90%;
+  height: 40px;
+  margin: 6rem auto;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  outline: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.info {
+  display: flex;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  word-spacing: 0.5rem;
+}
+
+.fab,
+.fas {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  opacity: 0.6;
+  transition: all 1.5s ease;
+  cursor: pointer;
+}
+
+.fab:hover,
+.fas:hover {
+  opacity: 1;
+  transform: translateY(-0.2rem);
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    width: 100%;
+    font-weight: bold;
+    font-size: 0.7rem;
+  }
+  .info {
+    word-spacing: 0;
+    margin: 0.8rem;
+  }
+}

@@ -1,0 +1,133 @@
+.about {
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 2rem;
+  padding: 0 3rem;
+}
+
+.about-text,
+.text-about {
+  margin-top: 3rem;
+  opacity: 0.8;
+}
+
+.about-subtitle {
+  position: absolute;
+  font-size: 1.3rem;
+  left: 42%;
+  letter-spacing: 0.2rem;
+  transform: skew(-30deg);
+}
+
+.about-title {
+  position: absolute;
+  top: 22%;
+}
+
+.main-img {
+  width: 100%;
+  border-top: 2px solid rgba(0, 0, 0, 0.6);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+  border-right-color: 1px red;
+  transition: all 1.5s ease-out;
+  opacity: 0.9;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.main-img:hover {
+  padding: 0;
+}
+
+.icon {
+  opacity: 0.6;
+  margin-right: 0.6rem;
+  margin-top: 8rem;
+  transform: translateY(0.25rem);
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 1.6rem;
+}
+
+.about-icon {
+  border-bottom: 1px solid lightgrey;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+.about-icon:hover {
+  transform: translateY(-1rem);
+}
+
+.fa-facebook-square,
+.fa-twitter-square,
+.fa-instagram {
+  margin: 0 1.5rem;
+  align-items: center;
+  transform: rotate(25deg);
+  color: rgba(0, 0, 0, 0.8);
+  padding: 0.1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .about {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about-title {
+    position: relative;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .about-subtitle {
+    display: none;
+  }
+  .main-img {
+    margin-top: 2rem;
+  }
+  .text-about,
+  .about-text {
+    line-height: 1.5rem;
+    text-align: center;
+  }
+  .icon {
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
+  .fa-facebook-square,
+  .fa-twitter-square,
+  .fa-instagram {
+    margin: 0 1.9rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .about {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .about-title {
+    position: relative;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .about-subtitle {
+    display: none;
+  }
+  .main-img {
+    width: 40%;
+    margin: 0 auto;
+  }
+  .text-about,
+  .about-text {
+    line-height: 1.5rem;
+  }
+  .icon {
+    margin-left: 34.5%;
+  }
+  .fa-facebook-square,
+  .fa-twitter-square,
+  .fa-instagram {
+    margin: 0.5rem 8.5rem;
+  }
+}

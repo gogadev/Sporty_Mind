@@ -1,0 +1,41 @@
+.cart-icon {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.shopping-icon {
+  width: 60px;
+  height: 60px;
+  opacity: 0.8;
+}
+
+.count {
+  position: absolute;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: darkgrey;
+  bottom: 18px;
+  transform: translateX(-0.1rem);
+}
+
+@media only screen and (max-width: 768px) {
+  .cart-icon {
+    width: 55px;
+    height: 55px;
+  }
+  .shopping-icon {
+    width: 50px;
+    height: 50px;
+    opacity: 0.8;
+  }
+  .count {
+    bottom: 12px;
+    font-size: 1rem;
+    transform: translateX(-0.3rem);
+  }
+}
